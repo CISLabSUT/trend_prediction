@@ -289,3 +289,29 @@ plt.xlabel('Error')
 plt.ylabel('Frequency')
 plt.show()
 
+# load the predictions1
+with open(f"{file_path}/predictions1.pkl", "rb") as file:
+    predictions1 = pickle.load(file)
+
+# Create separate lists for predicted embeddings
+predicted_embeddings = []
+
+# Iterate through predictions and extract the words and embeddings
+for prediction in predictions1:
+    predicted_embeddings.append(prediction)
+
+
+# Load the mapping of words and start years for the test set
+with open(f"{file_path}/test_words_and_start_years.pkl", "rb") as file:
+    test_words_and_start_years = pickle.load(file)
+
+# Create separate lists for words and their corresponding predicted embeddings
+words2024 = []
+actual_embeddings_2024 = []
+
+# Iterate through predictions and extract the words and embeddings
+for i, embedding in enumerate(combined_output_sequences_node_test_dgi100):
+    word, start_year = test_words_and_start_years[i]
+    words2024.append(word)
+    actual_embeddings_2024.append(embedding)
+

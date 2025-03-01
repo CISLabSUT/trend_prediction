@@ -26,11 +26,9 @@ This project provides valuable insights into the evolution of scientific knowled
 1️⃣ Data Collection & Preprocessing
 
 The dataset, collected from the Web of Science database, focuses on artificial intelligence and related sciences.
-
 📌[data.csv](data.csv)
 
 We preprocess the text to clean and structure the data.
-
 📌[Preprocessing Code](preprocessing/data_preprocessing.py)
 
 2️⃣ Feature Extraction
@@ -47,17 +45,14 @@ We preprocess the text to clean and structure the data.
 3️⃣ combine Embeddings & Predictions
 
 We combine Word2Vec and DGI embeddings to incorporate both semantic and structural word representations.
-
-📌[combine_word2vec_and_dgi Code](word2vec and dgi/combine_word2vec_and_dgi.py)
+📌[combine_word2vec_and_dgi Code](combine_word2vec_and_dgi/combine_word2vec_and_dgi.py)
 
 An LSTM model predicts word embeddings for the next year based on three previous years.
-
 📌[lstm1 Code](lstm1/lstm1.py)
 
 4️⃣ Clustering and mapping
 
 Clustering scientific words based on their embeddings to identify topics.To track topic evolution over time, we map clusters across years and extract their relationships
-
 📌  [clustering Code](clustering/clustering.py)
 
 5️⃣ Predicting Scientific Topic Connections
@@ -67,7 +62,7 @@ We use an LSTM model to predict the future relationships between scientific topi
 📌[lstm2 Code](lstm2/lstm2.py)
 
 
-📌clustering predicted embedding: [clustering predicted embedding Code](clustering predicted embedding/clustering.py)
+📌clustering predicted embedding: [clustering_predicted_embedding Code](clustering_predicted_embedding/clustering_predicted_embedding.py)
 
 
 # Technologies & Libraries

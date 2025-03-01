@@ -74,9 +74,9 @@ StellarGraph (Graph-based embeddings)
 
 TensorFlow / Keras (LSTM models)
 
-Scikit-learn 
+Scikit-learn (Clustering)
 
-Munkres (mapping)
+Munkres (Mapping)
 
 Matplotlib & Seaborn (Visualization)
 

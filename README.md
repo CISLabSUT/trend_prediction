@@ -45,7 +45,7 @@ We preprocess the text to clean and structure the data.
 3️⃣ combine Embeddings & Predictions
 
 We combine Word2Vec and DGI embeddings to incorporate both semantic and structural word representations.
-📌[combine_word2vec_and_dgi Code](combine_word2vec_and_dgi/combine_word2vec_and_dgi.py)
+📌[word2vec and dgi Code](word2vec and dgi/combine_word2vec_and_dgi.py)
 
 An LSTM model predicts word embeddings for the next year based on three previous years.
 📌[lstm1 Code](lstm1/lstm1.py)

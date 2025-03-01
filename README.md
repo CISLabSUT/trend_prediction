@@ -38,14 +38,14 @@ We preprocess the text to clean and structure the data.
 
 🔗 Structural Features (Graph-Based Embeddings): We generate word co-occurrence graphs for each year and apply Deep Graph Infomax (DGI) to extract node embeddings.
 
-📌 Graph Creation:[graph Code](graph/graph.py)
+📌 Graph Creation: [graph Code](graph/graph.py)
 
-📌 DGI Embeddings: [dgi Code](dgi/dgi.py)
+📌 DGI Embeddings:  [dgi Code](dgi/dgi.py)
 
 3️⃣ combine Embeddings & Predictions
 
 We combine Word2Vec and DGI embeddings to incorporate both semantic and structural word representations.
-📌[word2vec and dgi Code](combine_word2vec_and_dgi/combine_word2vec_and_dgi.py)
+📌[Combine Word2Vec and DGI Code](word2vec%20and%20dgi/combine_word2vec_and_dgi.py)
 
 An LSTM model predicts word embeddings for the next year based on three previous years.
 📌[lstm1 Code](lstm1/lstm1.py)
@@ -53,16 +53,15 @@ An LSTM model predicts word embeddings for the next year based on three previous
 4️⃣ Clustering and mapping
 
 Clustering scientific words based on their embeddings to identify topics.To track topic evolution over time, we map clusters across years and extract their relationships
-📌  [clustering Code](clustering/clustering.py)
+📌[clustering Code](clustering/clustering.py)
 
 5️⃣ Predicting Scientific Topic Connections
 
 We use an LSTM model to predict the future relationships between scientific topics.
-
 📌[lstm2 Code](lstm2/lstm2.py)
 
 
-📌clustering predicted embedding: [clustering_predicted_embedding Code](clustering_predicted_embedding/clustering_predicted_embedding.py)
+📌clustering predicted embedding: [clustering predicted embedding Code](clustering%20predicted%20embedding/clustering_predicted_embedding.py)
 
 
 # Technologies & Libraries
